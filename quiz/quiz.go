@@ -55,4 +55,10 @@ func ask(s score, question question) score {
 
 func main() {
 	// TODO: Write a quiz program
+	var questions = questions()
+	var current score
+	for i := range questions{
+		current = ask(current,questions[i])
+	}
+	fmt.Println(current)
 }
