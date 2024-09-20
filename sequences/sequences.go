@@ -35,4 +35,12 @@ func main() {
 	intsSlice := []int{1,2,3}
 	mapSlice(addOne,intsSlice)
 	fmt.Println(intsSlice)
+
+	intsSlice = []int{2, 3, 4, 5, 6}
+	newSlice := intsSlice[1:3]
+	mapSlice(square, newSlice)
+	fmt.Println(newSlice)
+	fmt.Println(intsSlice)
+	double(intsSlice)
+	fmt.Println(intsSlice)
 }
